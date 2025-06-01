@@ -1,5 +1,6 @@
 window.addEventListener("pagehide", function () {
   alert("[pagehide] URL:", window.location.href);
+  console.log("[pageshow] URL:", window.location.href);
 });
 
 window.addEventListener("pageshow", function () {
