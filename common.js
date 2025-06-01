@@ -14,7 +14,7 @@ window.addEventListener("pagehide", function () {
   const blob = new Blob([JSON.stringify(data)], { type: "application/json" });
 
   navigator.sendBeacon("/log", blob); // Replace with your server endpoint
-});
+}, true);
 
 // window.addEventListener("pageshow", function () {
 //   console.log("[pageshow] URL:", window.location.href);
